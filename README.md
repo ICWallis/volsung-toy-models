@@ -10,47 +10,26 @@ Flow State Solutions sponsored a licence of Volsung (v 1.14.0) for this project 
 
 ### 1) Conduction
 
-#### Concept
-
-Illustrates a conductive thermal gradient of 40 degC/km at a given rock conductivity (watts per metre-kelvin W/mK )
-
-There are two conduction models:
-- One with consistent rock thermal conductivity (2 W/mK) 
-- Another where rock thermal conductivity is varied (2 and 8 W/mK)
+Illustrates a conductive thermal gradient of 40 degC/km. Two models illustrate the impact of rock thermal conductivity (watts per metre-kelvin W/mK ):
+- One with consistent rock with moderately low thermal conductivity (2 W/mK)
+- Another where rock thermal conductivity is moderately low (2 W/mK) in one half of the model and high (9 W/mK) in the other half.
 
 List of rock thermal conductivities:
 https://pubs.usgs.gov/of/1988/0441/report.pdf
 
-#### Paramaters
+All rock types have permeability of 0.001 mD (i.e., below the limit for convection).
 
-All rock types have permeability of XXX mD (i.e., below the limit for convection).
-
-Rock A:
-
-Rock B:
-
-Rock C:
-
-#### Grid
-
-Tarten grid with XX elements
+A 10/10 km model with with 500 m Voronoi grid elements in the horizontal with 250 m thick blocks to 8 km depth. 
 
 ### 2) Single Fault
 
-#### Concept
 A single fault with high vertical permeability within a relatively low permeability host rock. A conductive thermal gradient of XXX degC/km is implemented without additional upflow elements (i.e., there is no additional injection of heat and mass into the fault zone). Subsequently, the convection cell, both upward and downward components, form inside the fault. 
 
-#### Paramaters
 
-#### Grid
 
 ### 6) Cap
 
-#### Concept
 
-#### Paramaters
-
-#### Grid
 
 ## Licence
 
