@@ -1,0 +1,597 @@
+<!DOCTYPE Brynhild>
+<root volsung-version="1.13.1">
+ <brynhildmainwindow class="AslaugMainWindow"><thermodynamictable class="TT_IAPWSIF97"></thermodynamictable>
+  <simulator>Sigurd</simulator>
+  <equationofstate>EOS_IAPWSIF97</equationofstate>
+  <numberofaqueoustracers>0</numberofaqueoustracers>
+  <hdf5reservoirviewer class="HDF5ReservoirViewer"><minclayer>0</minclayer>
+   <cellarrayname>Temperature</cellarrayname>
+   <projectionazimuth>0</projectionazimuth>
+   <projectioninclination>0</projectioninclination>
+   <cellopacity>1</cellopacity>
+   <cellstateselector>0</cellstateselector>
+   <cellcontoursvisible>0</cellcontoursvisible>
+   <cellcontoursarrayname>Temperature</cellcontoursarrayname>
+   <cellcontourscolourtype>1</cellcontourscolourtype>
+   <ncellcontours>10</ncellcontours>
+   <cellcontoursopacity>1</cellcontoursopacity>
+   <cellcontourscustomcolourarrayname>Temperature</cellcontourscustomcolourarrayname>
+   <cellvectorsvisible>0</cellvectorsvisible>
+   <cellvectorsarrayname></cellvectorsarrayname>
+   <cellvectorscustomcolourarrayname></cellvectorscustomcolourarrayname>
+   <cellvectorsrelativethreshold>0.90000000000000002</cellvectorsrelativethreshold>
+   <cellvectorsrelativescale>0.10000000000000001</cellvectorsrelativescale>
+   <cellvectorscolourtype>0</cellvectorscolourtype>
+   <provisionalgridvisible>0</provisionalgridvisible>
+   <provisionalwelltracksvisible>0</provisionalwelltracksvisible>
+   <wellslabelvisible>1</wellslabelvisible>
+   <wellboreradiusfactor>1</wellboreradiusfactor>
+   <wellborecolourtype>0</wellborecolourtype>
+   <standardclipazimuth>45</standardclipazimuth>
+   <colorlookuptabledb class="ColorLookupTableDB"><colorlookuptabledata class="ColorLookupTableData" name="Lithology Unit"><quantity>4</quantity>
+     <isdelta>0</isdelta>
+     <lowervaluecolor><r>0</r>
+      <g>0</g>
+      <b>255</b>
+      <alpha>255</alpha>
+     </lowervaluecolor>
+     <uppervaluecolor><r>255</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>255</alpha>
+     </uppervaluecolor>
+     <ncolors>256</ncolors>
+     <lowervalue>0</lowervalue>
+     <uppervalue>1</uppervalue>
+     <usevaluerange>0</usevaluerange>
+    </colorlookuptabledata>
+    <colorlookuptabledata class="ColorLookupTableData" name="Pressure"><quantity>9</quantity>
+     <isdelta>0</isdelta>
+     <lowervaluecolor><r>0</r>
+      <g>0</g>
+      <b>255</b>
+      <alpha>255</alpha>
+     </lowervaluecolor>
+     <uppervaluecolor><r>255</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>255</alpha>
+     </uppervaluecolor>
+     <ncolors>256</ncolors>
+     <lowervalue>0</lowervalue>
+     <uppervalue>1</uppervalue>
+     <usevaluerange>0</usevaluerange>
+    </colorlookuptabledata>
+    <colorlookuptabledata class="ColorLookupTableData" name="Temperature"><quantity>4</quantity>
+     <isdelta>0</isdelta>
+     <lowervaluecolor><r>0</r>
+      <g>0</g>
+      <b>255</b>
+      <alpha>255</alpha>
+     </lowervaluecolor>
+     <uppervaluecolor><r>255</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>255</alpha>
+     </uppervaluecolor>
+     <ncolors>256</ncolors>
+     <lowervalue>0</lowervalue>
+     <uppervalue>1</uppervalue>
+     <usevaluerange>0</usevaluerange>
+    </colorlookuptabledata>
+   </colorlookuptabledb>
+  </hdf5reservoirviewer>
+  <simulationrunwidget><isrunningremote>0</isrunningremote>
+  </simulationrunwidget>
+  <flownetwork class="FlowNetwork"><pressuretolerance>1000</pressuretolerance>
+   <flownetworkobjects></flownetworkobjects>
+   <flownetworkoptimizer class="FNO_TPSAAN"><generateoutput>0</generateoutput>
+    <nthreads>32</nthreads>
+    <maxiter>10000</maxiter>
+    <swapinterval>200</swapinterval>
+   </flownetworkoptimizer>
+   <ambientconditions class="AmbientConditions"><annualcycle>0</annualcycle>
+    <temperaturetable></temperaturetable>
+   </ambientconditions>
+  </flownetwork>
+  <gridcontainer class="GridContainer"><watch>0</watch>
+   <gridfilename>grid-voro.vgrid</gridfilename>
+   <rebuildgrid>0</rebuildgrid>
+   <gridgenerator class="GG_VoronoiXY"><z>0,-100,-200,-300,-400,-500,-600,-700,-800,-900,-1000,-1100,-1200,-1300,-1400,-1500,-1600,-1700,-1800,-1900,-2000,-2100,-2200,-2300,-2400,-2500,-2600,-2700,-2800,-2900,-3000,-3100,-3200,-3300,-3400,-3500,-3600,-3700,-3800,-3900,-4000,-4100,-4200,-4300,-4400,-4500,-4600,-4700,-4800,-4900,-5000,-5100,-5200,-5300,-5400,-5500,-5600,-5700,-5800,-5900,-6000,-6100,-6200,-6300,-6400,-6500,-6600,-6700,-6800,-6900,-7000,-7100,-7200,-7300,-7400,-7500,-7600,-7700,-7800,-7900,-8000</z>
+    <azimuth>0</azimuth>
+    <basepoint>0,0,0</basepoint>
+    <useundulatedsurface>0</useundulatedsurface>
+    <surfaceglobalcoordinates>1</surfaceglobalcoordinates>
+    <minimumcellheight>1</minimumcellheight>
+    <pointlist3d class="PointList3D"><x></x>
+     <y></y>
+     <z></z>
+    </pointlist3d>
+    <boundarypolygon><pointlist2d class="PointList2D"><x>0,0,10000,10000</x>
+      <y>0,10000,10000,0</y>
+     </pointlist2d>
+    </boundarypolygon>
+    <fixednodes><refinementpointlist2d class="RefinementPointList2D"><x></x>
+      <y></y>
+      <h></h>
+     </refinementpointlist2d>
+    </fixednodes>
+    <welltrackfixednodes>0</welltrackfixednodes>
+    <power>0.5</power>
+    <hmin>500</hmin>
+    <hmax>5000</hmax>
+    <tolerance>0.01</tolerance>
+    <maxiter>5</maxiter>
+    <seed>0</seed>
+   </gridgenerator>
+  </gridcontainer>
+  <brynhildsimulatorsettingscontainer class="BrynhildSimulatorSettingsContainer"><outputfilename>Results.sigurd</outputfilename>
+   <solverdevicetype>0</solverdevicetype>
+   <gpuid>0</gpuid>
+   <loglevel>1</loglevel>
+   <uselogport>0</uselogport>
+   <logport>2050</logport>
+   <usebacktracking>1</usebacktracking>
+   <translator>None</translator>
+   <initialstatesettingscontainer class="InitialStateSettingsContainer"><loadfromfile>0</loadfromfile>
+    <initialstatefilename></initialstatefilename>
+    <porosityfromfile>0</porosityfromfile>
+    <volumefromfile>0</volumefromfile>
+    <rockdensityfromfile>0</rockdensityfromfile>
+    <saveinterval>10</saveinterval>
+    <statesavefilename>SAVE.fafnir</statesavefilename>
+   </initialstatesettingscontainer>
+   <outputlinearsystem>0</outputlinearsystem>
+   <matrixequilibratorpretty>Matrix On</matrixequilibratorpretty>
+   <residual class="Residual"><reltol>1.0000000000000001e-05</reltol>
+    <abstol>1</abstol>
+    <absmaxtol>0.0001</absmaxtol>
+   </residual>
+   <connections class="Connections"><permweight>0</permweight>
+    <mobweight>1</mobweight>
+    <gravweight>2</gravweight>
+    <conductivityinterpolation>0</conductivityinterpolation>
+    <cellareaweight>0</cellareaweight>
+    <cellconnectivitylayer0>0</cellconnectivitylayer0>
+    <cellconnectivitylayer1>3</cellconnectivitylayer1>
+    <cellconnectivitylayerother>3</cellconnectivitylayerother>
+   </connections>
+   <linearsolversettingscontainer class="LinearSolverSettingsContainer"><solvertype>BiCGStab</solvertype>
+    <reltol>9.9999999999999995e-07</reltol>
+    <abstol>0</abstol>
+    <relmaxiter>0.10000000000000001</relmaxiter>
+    <ginsburgfactor>0.20000000000000001</ginsburgfactor>
+    <backupsolvertype>None</backupsolvertype>
+    <backuprelmaxiter>0.10000000000000001</backuprelmaxiter>
+   </linearsolversettingscontainer>
+   <steadystatesettingscontainer class="SteadyStateSettingsContainer"><usesteadystatedetection>0</usesteadystatedetection>
+    <pressurecriterion>3.0000000000000001e-06</pressurecriterion>
+    <temperaturecriterion>3e-11</temperaturecriterion>
+    <saturationcriterion>2.9999999999999998e-14</saturationcriterion>
+    <massfractioncriterion>2.9999999999999998e-14</massfractioncriterion>
+   </steadystatesettingscontainer>
+  </brynhildsimulatorsettingscontainer>
+  <propcontainer class="PropContainer"></propcontainer>
+  <modelversioninfo class="ModelVersionInfo"><title></title>
+   <description></description>
+  </modelversioninfo>
+  <timestepcontrol class="TimeStepControl"><starttime>-1000000000000000</starttime>
+   <endtime>1</endtime>
+   <maxnumbersteps>9999</maxnumbersteps>
+   <starttimestep>1</starttimestep>
+   <maxtimestep>9.9999999999999997e+98</maxtimestep>
+   <mintimestep>0.001</mintimestep>
+   <expansionfactor>2</expansionfactor>
+   <reductionfactor>0.25</reductionfactor>
+   <specialtimes></specialtimes>
+   <printtimes></printtimes>
+   <printinitialstate>1</printinitialstate>
+   <printnsteps>200</printnsteps>
+   <printonwarnings>1</printonwarnings>
+   <printonerrors>1</printonerrors>
+   <nrfastconverge>3</nrfastconverge>
+   <calibrationtime>10000000000</calibrationtime>
+   <maxcalibrationtimestep>1</maxcalibrationtimestep>
+   <scenariotime>20000000000</scenariotime>
+   <maxscenariotimestep>1</maxscenariotimestep>
+  </timestepcontrol>
+  <lithologydb class="LithologyDB"><relativepermeabilities><relativepermeability class="RP_Grant" name="default"><slresidual>0.29999999999999999</slresidual>
+     <sgresidual>0.050000000000000003</sgresidual>
+    </relativepermeability>
+   </relativepermeabilities>
+   <capillarypressures><capillarypressure class="CP_None" name="default"></capillarypressure>
+   </capillarypressures>
+   <permeabilitymodifications><PermeabilityModification class="PM_None" name="default"></PermeabilityModification>
+   </permeabilitymodifications>
+   <lithologyunits><lithologyunit class="LithologyUnit" name="cap"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>23</r>
+      <g>96</g>
+      <b>255</b>
+      <alpha>255</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="cap@Fracture"><density>2600</density>
+        <porosity>0.050000000000000003</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>1.0000000000000001e-19,1.0000000000000001e-19,1.0000000000000001e-19</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="default"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>0</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>0</alpha>
+     </color>
+     <isinitialized>0</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="default@Fracture"><density>2600</density>
+        <porosity>0.050000000000000003</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>1.0000000000000001e-15,1.0000000000000001e-15,1.0000000000000001e-15</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="fault"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>255</r>
+      <g>136</g>
+      <b>67</b>
+      <alpha>255</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="fault@Fracture"><density>2600</density>
+        <porosity>0.14999999999999999</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>5.0000000000000002e-14,5.0000000000000002e-14,1e-13</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="low perm"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>206</r>
+      <g>255</g>
+      <b>231</b>
+      <alpha>255</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="low perm@Fracture"><density>2600</density>
+        <porosity>0.050000000000000003</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>5.0000000000000004e-18,5.0000000000000004e-18,5.0000000000000004e-18</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="m. perm"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>255</r>
+      <g>239</g>
+      <b>211</b>
+      <alpha>255</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="m. perm@Fracture"><density>2600</density>
+        <porosity>0.050000000000000003</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>1.0000000000000001e-16,1.0000000000000001e-16,1.0000000000000001e-16</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="med-high perm"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>255</r>
+      <g>192</g>
+      <b>244</b>
+      <alpha>255</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="high perm@Fracture"><density>2600</density>
+        <porosity>0.050000000000000003</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>1e-14,1e-14,1e-14</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="v. low perm"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings>100,100,100</fracturespacings>
+     <color><r>255</r>
+      <g>199</g>
+      <b>130</b>
+      <alpha>255</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="v. low perm@Fracture"><density>2600</density>
+        <porosity>0.01</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis>1.0000000000000001e-18,1.0000000000000001e-18,1.0000000000000001e-18</mainaxis>
+         <rotationangles>0,0,0</rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
+   </lithologyunits>
+  </lithologydb>
+  <geologymodel class="LayerGeologyModel"><GeologyModelBarriers size="0"></GeologyModelBarriers>
+   <defaultunit>v. low perm</defaultunit>
+   <geologymodellayers size="4"><geologymodelelement class="GML_Delaunay2D" id="0" index="0"><name>basement</name>
+     <enabled>1</enabled>
+     <geologymodellayertype>0</geologymodellayertype>
+     <useunitname>0</useunitname>
+     <unitname>low perm</unitname>
+     <actorvisible>0</actorvisible>
+     <actoropacity>1</actoropacity>
+     <manifold class="PLBM_Delaunay2D"><basepoint>0,0,0</basepoint>
+      <azimuth>0</azimuth>
+      <identifier>FRIGG::GeologyModelLayer/Id:0</identifier>
+      <pointlist3d class="PointList3D"><x>0,0,10000,10000</x>
+       <y>10000,0,0,10000</y>
+       <z>-2000,-2000,-2000,-2000</z>
+      </pointlist3d>
+     </manifold>
+    </geologymodelelement>
+    <geologymodelelement class="GML_Delaunay2D" id="4" index="1"><name>cover - below cap</name>
+     <enabled>1</enabled>
+     <geologymodellayertype>0</geologymodellayertype>
+     <useunitname>0</useunitname>
+     <unitname>m. perm</unitname>
+     <actorvisible>0</actorvisible>
+     <actoropacity>1</actoropacity>
+     <manifold class="PLBM_Delaunay2D"><basepoint>0,0,0</basepoint>
+      <azimuth>0</azimuth>
+      <identifier>FRIGG::GeologyModelLayer/Id:4</identifier>
+      <pointlist3d class="PointList3D"><x>1800,1800,8000,8000</x>
+       <y>3000,7000,3000,7000</y>
+       <z>-750,-750,-750,-750</z>
+      </pointlist3d>
+     </manifold>
+    </geologymodelelement>
+    <geologymodelelement class="GML_Delaunay2D" id="3" index="2"><name>cap</name>
+     <enabled>1</enabled>
+     <geologymodellayertype>0</geologymodellayertype>
+     <useunitname>0</useunitname>
+     <unitname>cap</unitname>
+     <actorvisible>0</actorvisible>
+     <actoropacity>1</actoropacity>
+     <manifold class="PLBM_Delaunay2D"><basepoint>0,0,0</basepoint>
+      <azimuth>0</azimuth>
+      <identifier>FRIGG::GeologyModelLayer/Id:3</identifier>
+      <pointlist3d class="PointList3D"><x>1800,1800,8000,8000</x>
+       <y>3000,7000,3000,7000</y>
+       <z>-200,-200,-200,-200</z>
+      </pointlist3d>
+     </manifold>
+    </geologymodelelement>
+    <geologymodelelement class="GML_Delaunay2D" id="1" index="3"><name>cover</name>
+     <enabled>1</enabled>
+     <geologymodellayertype>0</geologymodellayertype>
+     <useunitname>0</useunitname>
+     <unitname>m. perm</unitname>
+     <actorvisible>0</actorvisible>
+     <actoropacity>1</actoropacity>
+     <manifold class="PLBM_Delaunay2D"><basepoint>0,0,0</basepoint>
+      <azimuth>0</azimuth>
+      <identifier>FRIGG::GeologyModelLayer/Id:1</identifier>
+      <pointlist3d class="PointList3D"><x>0,0,10000,10000</x>
+       <y>10000,0,0,10000</y>
+       <z>0,0,0,0</z>
+      </pointlist3d>
+     </manifold>
+    </geologymodelelement>
+   </geologymodellayers>
+   <GeologyModelLayers size="1"><geologymodelelement class="GML_Delaunay2D" id="2" index="0"><name></name>
+     <enabled>1</enabled>
+     <geologymodellayertype>1</geologymodellayertype>
+     <useunitname>1</useunitname>
+     <unitname>fault</unitname>
+     <actorvisible>0</actorvisible>
+     <actoropacity>1</actoropacity>
+     <manifold class="PLBM_Delaunay2D"><basepoint>0,0,0</basepoint>
+      <azimuth>0</azimuth>
+      <identifier>FRIGG::GeologyModelLayer/Id:2</identifier>
+      <pointlist3d class="PointList3D"><x>3000,7000,3000,7000</x>
+       <y>5000,5000,5000,5000</y>
+       <z>-1000,-1000,-7500,-7500</z>
+      </pointlist3d>
+     </manifold>
+    </geologymodelelement>
+   </GeologyModelLayers>
+  </geologymodel>
+  <geomechanics class="GM_None"></geomechanics>
+  <boundaryconditioncontainer class="BoundaryConditionContainer"><boundarycondition class="BCES_Atmosphere" id="0"><enabled>1</enabled>
+    <name>Atmosphere</name>
+    <color><r>255</r>
+     <g>255</g>
+     <b>255</b>
+     <alpha>255</alpha>
+    </color>
+    <actorvisible>1</actorvisible>
+    <actoropacity>1</actoropacity>
+    <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>99999.999999999985</p>
+      <h>84011.799999999988</h>
+      <xh2o>1</xh2o>
+     </thermodynamictable>
+    </initialstate>
+    <emissivity>0.61199999999999999</emissivity>
+   </boundarycondition>
+   <boundarycondition class="BCES_HotPlate" id="1"><enabled>1</enabled>
+    <name>Hot Plate</name>
+    <color><r>255</r>
+     <g>255</g>
+     <b>255</b>
+     <alpha>255</alpha>
+    </color>
+    <actorvisible>1</actorvisible>
+    <actoropacity>1</actoropacity>
+    <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>14999999.999999998</p>
+      <h>1453846.0497470254</h>
+      <xh2o>1</xh2o>
+     </thermodynamictable>
+    </initialstate>
+    <thermalconductivity>2</thermalconductivity>
+    <connectiondistance>0</connectiondistance>
+   </boundarycondition>
+  </boundaryconditioncontainer>
+  <extramodulecontainer class="ExtraModuleContainer"></extramodulecontainer>
+  <reportcontainer class="ReportContainer" size="0"></reportcontainer>
+ </brynhildmainwindow>
+</root>
