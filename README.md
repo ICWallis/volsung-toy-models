@@ -4,7 +4,7 @@ Simple finite element, heat- and mass-transfer models designed to teach geotherm
 
 Models developed by Irene Wallis, Cubic Earth https://www.cubicearth.nz/
 
-Flow State Solutions sponsored a licence of Volsung for this project https://www.flowstatesolutions.co.nz/
+Flow State Solutions sponsored a licence of Volsung (v 1.14.0) for this project https://www.flowstatesolutions.co.nz/
 
 ## Model Descriptions
 
@@ -12,11 +12,14 @@ Flow State Solutions sponsored a licence of Volsung for this project https://www
 
 #### Concept
 
-Illustrates a conductive thermal gradient of XXX degC/km. 
+Illustrates a conductive thermal gradient of 40 degC/km at a given rock conductivity (watts per metre-kelvin W/mK )
 
-There are to conduction models:
-- One with consistent rock thermal conductivity 
-- Another where rock thermal conductivity is varied
+There are two conduction models:
+- One with consistent rock thermal conductivity (2 W/mK) 
+- Another where rock thermal conductivity is varied (2 and 8 W/mK)
+
+List of rock thermal conductivities:
+https://pubs.usgs.gov/of/1988/0441/report.pdf
 
 #### Paramaters
 
