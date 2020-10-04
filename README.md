@@ -10,9 +10,9 @@ Flow State Solutions sponsored a licence of Volsung (v 1.14.0) for this project 
 
 ### 1) Conduction
 
-Illustrates a conductive thermal gradient of 40 degC/km. Two models illustrate the impact of rock thermal conductivity (watts per metre-kelvin W/mK ):
-- One with consistent rock with moderately low thermal conductivity (2 W/mK)
-- Another where rock thermal conductivity is moderately low (2 W/mK) in one half of the model and high (9 W/mK) in the other half.
+Illustrates a conductive thermal gradient of 40 degC/km. Two models illustrate the impact of rock thermal conductivity (watts per metre-kelvin, W/mK):
+- One with consistent and moderately low conductivity (2 W/mK)
+- Another where conductivity is moderately low (2 W/mK) in one half of the model and high (9 W/mK) in the other half.
 
 List of rock thermal conductivities:
 https://pubs.usgs.gov/of/1988/0441/report.pdf
