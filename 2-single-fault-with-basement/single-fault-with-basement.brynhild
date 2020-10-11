@@ -6,7 +6,7 @@
   <numberofaqueoustracers>0</numberofaqueoustracers>
   <parametertagcollection class="ParameterTagCollection"></parametertagcollection>
   <hdf5reservoirviewer class="HDF5ReservoirViewer"><minclayer>0</minclayer>
-   <cellarrayname>Temperature</cellarrayname>
+   <cellarrayname>Lithology Unit</cellarrayname>
    <projectionazimuth>0</projectionazimuth>
    <projectioninclination>0</projectioninclination>
    <cellopacity>1</cellopacity>
@@ -14,16 +14,16 @@
    <cellcontoursvisible>1</cellcontoursvisible>
    <cellcontoursarrayname>Temperature</cellcontoursarrayname>
    <cellcontourscolourtype>1</cellcontourscolourtype>
-   <ncellcontours>10</ncellcontours>
+   <ncellcontours>15</ncellcontours>
    <cellcontoursopacity>1</cellcontoursopacity>
    <cellcontourscustomcolourarrayname>Temperature</cellcontourscustomcolourarrayname>
-   <cellvectorsvisible>0</cellvectorsvisible>
+   <cellvectorsvisible>1</cellvectorsvisible>
    <cellvectorsarrayname></cellvectorsarrayname>
-   <cellvectorscustomcolourarrayname></cellvectorscustomcolourarrayname>
+   <cellvectorscustomcolourarrayname>Temperature</cellvectorscustomcolourarrayname>
    <cellvectorsrelativethreshold>0.90000000000000002</cellvectorsrelativethreshold>
-   <cellvectorsrelativescale>0.10000000000000001</cellvectorsrelativescale>
-   <cellvectorscolourtype>0</cellvectorscolourtype>
-   <provisionalgridvisible>1</provisionalgridvisible>
+   <cellvectorsrelativescale>0.99999999999999978</cellvectorsrelativescale>
+   <cellvectorscolourtype>1</cellvectorscolourtype>
+   <provisionalgridvisible>0</provisionalgridvisible>
    <provisionalwelltracksvisible>0</provisionalwelltracksvisible>
    <wellslabelvisible>1</wellslabelvisible>
    <wellboreradiusfactor>1</wellboreradiusfactor>
@@ -556,7 +556,7 @@
      <geologymodellayertype>0</geologymodellayertype>
      <useunitname>0</useunitname>
      <unitname>low perm</unitname>
-     <actorvisible>1</actorvisible>
+     <actorvisible>0</actorvisible>
      <actoropacity>1</actoropacity>
      <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
        <v row="1">0</v>
@@ -619,7 +619,7 @@
      <geologymodellayertype>1</geologymodellayertype>
      <useunitname>1</useunitname>
      <unitname>fault</unitname>
-     <actorvisible>1</actorvisible>
+     <actorvisible>0</actorvisible>
      <actoropacity>1</actoropacity>
      <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
        <v row="1">0</v>

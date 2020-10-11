@@ -6,17 +6,17 @@
   <numberofaqueoustracers>0</numberofaqueoustracers>
   <parametertagcollection class="ParameterTagCollection"></parametertagcollection>
   <hdf5reservoirviewer class="HDF5ReservoirViewer"><minclayer>0</minclayer>
-   <cellarrayname>Lithology Unit</cellarrayname>
+   <cellarrayname>Temperature</cellarrayname>
    <projectionazimuth>0</projectionazimuth>
    <projectioninclination>0</projectioninclination>
    <cellopacity>1</cellopacity>
    <cellstateselector>0</cellstateselector>
    <cellcontoursvisible>0</cellcontoursvisible>
-   <cellcontoursarrayname></cellcontoursarrayname>
-   <cellcontourscolourtype>0</cellcontourscolourtype>
+   <cellcontoursarrayname>Temperature</cellcontoursarrayname>
+   <cellcontourscolourtype>1</cellcontourscolourtype>
    <ncellcontours>10</ncellcontours>
    <cellcontoursopacity>1</cellcontoursopacity>
-   <cellcontourscustomcolourarrayname></cellcontourscustomcolourarrayname>
+   <cellcontourscustomcolourarrayname>Temperature</cellcontourscustomcolourarrayname>
    <cellvectorsvisible>0</cellvectorsvisible>
    <cellvectorsarrayname></cellvectorsarrayname>
    <cellvectorscustomcolourarrayname></cellvectorscustomcolourarrayname>
@@ -29,7 +29,24 @@
    <wellboreradiusfactor>1</wellboreradiusfactor>
    <wellborecolourtype>0</wellborecolourtype>
    <standardclipazimuth>45</standardclipazimuth>
-   <colorlookuptabledb class="ColorLookupTableDB"><colorlookuptabledata class="ColorLookupTableData" name="Pressure"><quantity>9</quantity>
+   <colorlookuptabledb class="ColorLookupTableDB"><colorlookuptabledata class="ColorLookupTableData" name="Lithology Unit"><quantity>9</quantity>
+     <isdelta>0</isdelta>
+     <lowervaluecolor><r>0</r>
+      <g>0</g>
+      <b>255</b>
+      <alpha>255</alpha>
+     </lowervaluecolor>
+     <uppervaluecolor><r>255</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>255</alpha>
+     </uppervaluecolor>
+     <ncolors>256</ncolors>
+     <lowervalue>0</lowervalue>
+     <uppervalue>1</uppervalue>
+     <usevaluerange>0</usevaluerange>
+    </colorlookuptabledata>
+    <colorlookuptabledata class="ColorLookupTableData" name="Pressure"><quantity>9</quantity>
      <isdelta>0</isdelta>
      <lowervaluecolor><r>0</r>
       <g>0</g>
@@ -163,8 +180,8 @@
    <logport>2050</logport>
    <usebacktracking>1</usebacktracking>
    <translator>None</translator>
-   <initialstatesettingscontainer class="InitialStateSettingsContainer"><loadfromfile>0</loadfromfile>
-    <initialstatefilename></initialstatefilename>
+   <initialstatesettingscontainer class="InitialStateSettingsContainer"><loadfromfile>1</loadfromfile>
+    <initialstatefilename>INCON.fafnir</initialstatefilename>
     <porosityfromfile>0</porosityfromfile>
     <volumefromfile>0</volumefromfile>
     <rockdensityfromfile>0</rockdensityfromfile>
@@ -306,8 +323,8 @@
        <rockproperties class="RockProperties" name="v. low perm@Fracture"><density>2600</density>
         <porosity>0.01</porosity>
         <specificheat>1000</specificheat>
-        <wetconductivity>2</wetconductivity>
-        <dryconductivity>2</dryconductivity>
+        <wetconductivity>1</wetconductivity>
+        <dryconductivity>1</dryconductivity>
         <porecompressibility>0</porecompressibility>
         <poreexpansivity>0</poreexpansivity>
         <permeability><impermeable>0</impermeable>
@@ -353,8 +370,8 @@
        <rockproperties class="RockProperties" name="v. low perm high conductivity@Fracture"><density>2600</density>
         <porosity>0.050000000000000003</porosity>
         <specificheat>1000</specificheat>
-        <wetconductivity>9</wetconductivity>
-        <dryconductivity>9</dryconductivity>
+        <wetconductivity>400</wetconductivity>
+        <dryconductivity>400</dryconductivity>
         <porecompressibility>0</porecompressibility>
         <poreexpansivity>0</poreexpansivity>
         <permeability><impermeable>0</impermeable>
