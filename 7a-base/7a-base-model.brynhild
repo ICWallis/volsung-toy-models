@@ -1,5 +1,5 @@
 <!DOCTYPE Brynhild>
-<root volsung-version="1.14.0">
+<root volsung-version="1.14.3">
  <brynhildmainwindow class="AslaugMainWindow"><thermodynamictable class="TT_IAPWSIF97"></thermodynamictable>
   <simulator>Sigurd</simulator>
   <equationofstate>EOS_IAPWSIF97</equationofstate>
@@ -197,8 +197,8 @@
   </modelversioninfo>
   <timestepcontrol class="TimeStepControl"><starttime>-1000000000000000</starttime>
    <endtime>1</endtime>
-   <maxnumbersteps>9999</maxnumbersteps>
-   <starttimestep>1</starttimestep>
+   <maxnumbersteps>10000</maxnumbersteps>
+   <starttimestep>0.001</starttimestep>
    <maxtimestep>9.9999999999999997e+98</maxtimestep>
    <mintimestep>0.001</mintimestep>
    <expansionfactor>2</expansionfactor>
@@ -206,7 +206,7 @@
    <specialtimes size="0"></specialtimes>
    <printtimes size="0"></printtimes>
    <printinitialstate>1</printinitialstate>
-   <printnsteps>200</printnsteps>
+   <printnsteps>1</printnsteps>
    <printonwarnings>1</printonwarnings>
    <printonerrors>1</printonerrors>
    <nrfastconverge>3</nrfastconverge>
@@ -513,6 +513,98 @@
     </initialstate>
     <thermalconductivity>2</thermalconductivity>
     <connectiondistance>0</connectiondistance>
+   </boundarycondition>
+   <boundarycondition class="BCS_Delaunay2D" id="2"><enabled>1</enabled>
+    <name>Upflow</name>
+    <color><r>255</r>
+     <g>255</g>
+     <b>255</b>
+     <alpha>255</alpha>
+    </color>
+    <actorvisible>1</actorvisible>
+    <actoropacity>1</actoropacity>
+    <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
+      <v row="1">0</v>
+      <v row="2">0</v>
+     </basepoint>
+     <azimuth>0</azimuth>
+     <identifier>FAFNIR::BoundaryCondition/Id:2</identifier>
+     <pointlist3d class="PointList3D"><x size="4"><v index="0">2082.3315526665392</v>
+       <v index="1">1868.9381275386763</v>
+       <v index="2">1805.8101159353166</v>
+       <v index="3">2036.6885128452011</v>
+      </x>
+      <y size="4"><v index="0">1382.513186930652</v>
+       <v index="1">1444.5525794354485</v>
+       <v index="2">2523.6556694425453</v>
+       <v index="3">2532.3534626428436</v>
+      </y>
+      <z size="4"><v index="0">-4000</v>
+       <v index="1">-3999.9999999999995</v>
+       <v index="2">-4000</v>
+       <v index="3">-4000</v>
+      </z>
+     </pointlist3d>
+    </manifold>
+    <ratesareabsolute>1</ratesareabsolute>
+    <flowratetable class="FlowRateTable"><tablerow><time>-9.9999999999999997e+98</time>
+      <flowrate><p>0</p>
+       <h>1300000</h>
+       <w>1</w>
+       <q>0</q>
+       <xh2o>1</xh2o>
+      </flowrate>
+     </tablerow>
+    </flowratetable>
+   </boundarycondition>
+   <boundarycondition class="BCFS_Delaunay2D" id="4"><enabled>1</enabled>
+    <name>fixed-pressure-bloc</name>
+    <color><r>170</r>
+     <g>255</g>
+     <b>0</b>
+     <alpha>255</alpha>
+    </color>
+    <actorvisible>1</actorvisible>
+    <actoropacity>1</actoropacity>
+    <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
+      <v row="1">0</v>
+      <v row="2">0</v>
+     </basepoint>
+     <azimuth>0</azimuth>
+     <identifier>FAFNIR::BoundaryCondition/Id:4</identifier>
+     <pointlist3d class="PointList3D"><x size="3"><v index="0">3285.2563550638874</v>
+       <v index="1">2943.2778841734548</v>
+       <v index="2">3625.7148818348592</v>
+      </x>
+      <y size="3"><v index="0">798.35244784403039</v>
+       <v index="1">616.02188377122366</v>
+       <v index="2">263.36433670750739</v>
+      </y>
+      <z size="3"><v index="0">-10</v>
+       <v index="1">-10</v>
+       <v index="2">-10</v>
+      </z>
+     </pointlist3d>
+    </manifold>
+    <usehydrostaticcorrection>0</usehydrostaticcorrection>
+    <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+    <elementstates><statechange time="-9.9999999999999997e+98"><elementstate>1</elementstate>
+      <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+        <h>84013.100000000006</h>
+        <xh2o>1</xh2o>
+       </thermodynamictable>
+      </initialstate>
+      <useinitialstate>0</useinitialstate>
+     </statechange>
+     <statechange time="-100000000000000"><elementstate>0</elementstate>
+      <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>1001324.9999999999</p>
+        <h>632575.73786280979</h>
+        <xh2o>1</xh2o>
+       </thermodynamictable>
+      </initialstate>
+      <useinitialstate>1</useinitialstate>
+     </statechange>
+    </elementstates>
    </boundarycondition>
   </boundaryconditioncontainer>
   <extramodulecontainer class="ExtraModuleContainer"></extramodulecontainer>
