@@ -6,7 +6,7 @@
   <numberofaqueoustracers>0</numberofaqueoustracers>
   <parametertagcollection class="ParameterTagCollection"></parametertagcollection>
   <hdf5reservoirviewer class="HDF5ReservoirViewer"><minclayer>0</minclayer>
-   <cellarrayname>Lithology Unit</cellarrayname>
+   <cellarrayname>Temperature</cellarrayname>
    <projectionazimuth>0</projectionazimuth>
    <projectioninclination>0</projectioninclination>
    <cellopacity>1</cellopacity>
@@ -17,12 +17,12 @@
    <ncellcontours>10</ncellcontours>
    <cellcontoursopacity>1</cellcontoursopacity>
    <cellcontourscustomcolourarrayname></cellcontourscustomcolourarrayname>
-   <cellvectorsvisible>0</cellvectorsvisible>
-   <cellvectorsarrayname></cellvectorsarrayname>
-   <cellvectorscustomcolourarrayname></cellvectorscustomcolourarrayname>
-   <cellvectorsrelativethreshold>0.90000000000000002</cellvectorsrelativethreshold>
-   <cellvectorsrelativescale>0.10000000000000001</cellvectorsrelativescale>
-   <cellvectorscolourtype>0</cellvectorscolourtype>
+   <cellvectorsvisible>1</cellvectorsvisible>
+   <cellvectorsarrayname>FMass</cellvectorsarrayname>
+   <cellvectorscustomcolourarrayname>Temperature</cellvectorscustomcolourarrayname>
+   <cellvectorsrelativethreshold>0.001</cellvectorsrelativethreshold>
+   <cellvectorsrelativescale>0.20095554765889179</cellvectorsrelativescale>
+   <cellvectorscolourtype>1</cellvectorscolourtype>
    <provisionalgridvisible>0</provisionalgridvisible>
    <provisionalwelltracksvisible>0</provisionalwelltracksvisible>
    <wellslabelvisible>1</wellslabelvisible>
@@ -364,6 +364,53 @@
       </lithologyunit>
      </layers>
     </lithologyunit>
+    <lithologyunit class="LithologyUnit" name="0.1 mD"><elementstate>0</elementstate>
+     <type>0</type>
+     <fracturespacings size="3"><v index="0">100</v>
+      <v index="1">100</v>
+      <v index="2">100</v>
+     </fracturespacings>
+     <color><r>0</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>0</alpha>
+     </color>
+     <isinitialized>1</isinitialized>
+     <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
+       <initialstate><useouterinitialstate>0</useouterinitialstate>
+        <usehydrostaticcorrection>0</usehydrostaticcorrection>
+        <hydrostaticbaseelevation>0</hydrostaticbaseelevation>
+        <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>101325</p>
+          <h>80000</h>
+          <xh2o>1</xh2o>
+         </thermodynamictable>
+        </initialstate>
+       </initialstate>
+       <useouterrockproperties>0</useouterrockproperties>
+       <rockproperties class="RockProperties" name="0.1 mD@Fracture"><density>2600</density>
+        <porosity>0.050000000000000003</porosity>
+        <specificheat>1000</specificheat>
+        <wetconductivity>2</wetconductivity>
+        <dryconductivity>2</dryconductivity>
+        <porecompressibility>0</porecompressibility>
+        <poreexpansivity>0</poreexpansivity>
+        <permeability><impermeable>0</impermeable>
+         <mainaxis><v row="0">1.0000000000000001e-16</v>
+          <v row="1">1.0000000000000001e-16</v>
+          <v row="2">1.0000000000000001e-16</v>
+         </mainaxis>
+         <rotationangles><v row="0">0</v>
+          <v row="1">0</v>
+          <v row="2">0</v>
+         </rotationangles>
+        </permeability>
+        <relativepermeability>default</relativepermeability>
+        <capillarypressure>default</capillarypressure>
+        <permeabilitymodification>default</permeabilitymodification>
+       </rockproperties>
+      </lithologyunit>
+     </layers>
+    </lithologyunit>
     <lithologyunit class="LithologyUnit" name="Fault"><elementstate>0</elementstate>
      <type>0</type>
      <fracturespacings size="3"><v index="0">100</v>
@@ -422,7 +469,7 @@
       <b>0</b>
       <alpha>0</alpha>
      </color>
-     <isinitialized>0</isinitialized>
+     <isinitialized>1</isinitialized>
      <layers nlayers="1"><lithologyunit class="LithologyUnitLayer" name="Fracture" index="0"><volumefraction>1</volumefraction>
        <initialstate><useouterinitialstate>0</useouterinitialstate>
         <usehydrostaticcorrection>0</usehydrostaticcorrection>
@@ -499,7 +546,7 @@
      <geologymodellayertype>1</geologymodellayertype>
      <useunitname>0</useunitname>
      <unitname>Fault</unitname>
-     <actorvisible>1</actorvisible>
+     <actorvisible>0</actorvisible>
      <actoropacity>1</actoropacity>
      <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
        <v row="1">0</v>
@@ -568,7 +615,7 @@
      <b>255</b>
      <alpha>255</alpha>
     </color>
-    <actorvisible>1</actorvisible>
+    <actorvisible>0</actorvisible>
     <actoropacity>1</actoropacity>
     <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
       <v row="1">0</v>
@@ -611,7 +658,7 @@
      <b>255</b>
      <alpha>255</alpha>
     </color>
-    <actorvisible>1</actorvisible>
+    <actorvisible>0</actorvisible>
     <actoropacity>1</actoropacity>
     <manifold class="PLBM_PolyVertex"><basepoint><v row="0">0</v>
       <v row="1">0</v>
