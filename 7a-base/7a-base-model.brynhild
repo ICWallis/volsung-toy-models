@@ -1,5 +1,5 @@
 <!DOCTYPE Brynhild>
-<root volsung-version="1.14.3">
+<root volsung-version="1.14.4">
  <brynhildmainwindow class="AslaugMainWindow"><thermodynamictable class="TT_IAPWSIF97"></thermodynamictable>
   <simulator>Sigurd</simulator>
   <equationofstate>EOS_IAPWSIF97</equationofstate>
@@ -116,30 +116,60 @@
       </y>
      </pointlist2d>
     </boundarypolygon>
-    <fixednodes><refinementpointlist2d class="RefinementPointList2D"><x size="5"><v index="0">2000</v>
+    <fixednodes><refinementpointlist2d class="RefinementPointList2D"><x size="15"><v index="0">2000</v>
        <v index="1">2000</v>
        <v index="2">2000</v>
        <v index="3">2000</v>
        <v index="4">2000</v>
+       <v index="5">2000</v>
+       <v index="6">2000</v>
+       <v index="7">2000</v>
+       <v index="8">2000</v>
+       <v index="9">2000</v>
+       <v index="10">2000</v>
+       <v index="11">2000</v>
+       <v index="12">2000</v>
+       <v index="13">2000</v>
+       <v index="14">2000</v>
       </x>
-      <y size="5"><v index="0">1500</v>
-       <v index="1">1750</v>
-       <v index="2">2000</v>
-       <v index="3">2250</v>
-       <v index="4">2500</v>
+      <y size="15"><v index="0">1300</v>
+       <v index="1">1400</v>
+       <v index="2">1500</v>
+       <v index="3">1600</v>
+       <v index="4">1700</v>
+       <v index="5">1800</v>
+       <v index="6">1900</v>
+       <v index="7">2000</v>
+       <v index="8">2100</v>
+       <v index="9">2200</v>
+       <v index="10">2300</v>
+       <v index="11">2400</v>
+       <v index="12">2500</v>
+       <v index="13">2600</v>
+       <v index="14">2700</v>
       </y>
-      <h size="5"><v index="0">300</v>
-       <v index="1">300</v>
-       <v index="2">300</v>
-       <v index="3">300</v>
-       <v index="4">300</v>
+      <h size="15"><v index="0">150</v>
+       <v index="1">150</v>
+       <v index="2">150</v>
+       <v index="3">150</v>
+       <v index="4">150</v>
+       <v index="5">150</v>
+       <v index="6">150</v>
+       <v index="7">150</v>
+       <v index="8">150</v>
+       <v index="9">150</v>
+       <v index="10">150</v>
+       <v index="11">150</v>
+       <v index="12">150</v>
+       <v index="13">150</v>
+       <v index="14">150</v>
       </h>
      </refinementpointlist2d>
     </fixednodes>
     <welltrackfixednodes>1</welltrackfixednodes>
     <power>0.80000000000000004</power>
-    <hmin>500</hmin>
-    <hmax>5000</hmax>
+    <hmin>100</hmin>
+    <hmax>1000</hmax>
     <tolerance>0.01</tolerance>
     <maxiter>1000</maxiter>
     <seed>0</seed>
