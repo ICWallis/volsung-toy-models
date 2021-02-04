@@ -6,7 +6,7 @@
   <numberofaqueoustracers>0</numberofaqueoustracers>
   <parametertagcollection class="ParameterTagCollection"></parametertagcollection>
   <hdf5reservoirviewer class="HDF5ReservoirViewer"><minclayer>0</minclayer>
-   <cellarrayname>State</cellarrayname>
+   <cellarrayname>Temperature</cellarrayname>
    <projectionazimuth>0</projectionazimuth>
    <projectioninclination>0</projectioninclination>
    <cellopacity>1</cellopacity>
@@ -17,12 +17,12 @@
    <ncellcontours>10</ncellcontours>
    <cellcontoursopacity>1</cellcontoursopacity>
    <cellcontourscustomcolourarrayname></cellcontourscustomcolourarrayname>
-   <cellvectorsvisible>0</cellvectorsvisible>
-   <cellvectorsarrayname></cellvectorsarrayname>
-   <cellvectorscustomcolourarrayname></cellvectorscustomcolourarrayname>
+   <cellvectorsvisible>1</cellvectorsvisible>
+   <cellvectorsarrayname>v (liquid)</cellvectorsarrayname>
+   <cellvectorscustomcolourarrayname>Temperature</cellvectorscustomcolourarrayname>
    <cellvectorsrelativethreshold>0.90000000000000002</cellvectorsrelativethreshold>
    <cellvectorsrelativescale>0.10000000000000001</cellvectorsrelativescale>
-   <cellvectorscolourtype>0</cellvectorscolourtype>
+   <cellvectorscolourtype>1</cellvectorscolourtype>
    <provisionalgridvisible>0</provisionalgridvisible>
    <provisionalwelltracksvisible>0</provisionalwelltracksvisible>
    <wellslabelvisible>1</wellslabelvisible>
@@ -416,7 +416,7 @@
     <flowratetable class="FlowRateTable"><tablerow><time>-9.9999999999999997e+98</time>
       <flowrate><p>0</p>
        <h>1300000</h>
-       <w>1</w>
+       <w>15</w>
        <q>0</q>
        <xh2o>1</xh2o>
       </flowrate>
