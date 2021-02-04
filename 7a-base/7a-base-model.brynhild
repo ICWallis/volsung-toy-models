@@ -6,7 +6,7 @@
   <numberofaqueoustracers>0</numberofaqueoustracers>
   <parametertagcollection class="ParameterTagCollection"></parametertagcollection>
   <hdf5reservoirviewer class="HDF5ReservoirViewer"><minclayer>0</minclayer>
-   <cellarrayname>Temperature</cellarrayname>
+   <cellarrayname>Lithology Unit</cellarrayname>
    <projectionazimuth>0</projectionazimuth>
    <projectioninclination>0</projectioninclination>
    <cellopacity>1</cellopacity>
@@ -30,6 +30,23 @@
    <wellborecolourtype>0</wellborecolourtype>
    <standardclipazimuth>45</standardclipazimuth>
    <colorlookuptabledb class="ColorLookupTableDB"><colorlookuptabledata class="ColorLookupTableData" name="Pressure"><quantity>9</quantity>
+     <isdelta>0</isdelta>
+     <lowervaluecolor><r>0</r>
+      <g>0</g>
+      <b>255</b>
+      <alpha>255</alpha>
+     </lowervaluecolor>
+     <uppervaluecolor><r>255</r>
+      <g>0</g>
+      <b>0</b>
+      <alpha>255</alpha>
+     </uppervaluecolor>
+     <ncolors>256</ncolors>
+     <lowervalue>0</lowervalue>
+     <uppervalue>1</uppervalue>
+     <usevaluerange>0</usevaluerange>
+    </colorlookuptabledata>
+    <colorlookuptabledata class="ColorLookupTableData" name="State"><quantity>0</quantity>
      <isdelta>0</isdelta>
      <lowervaluecolor><r>0</r>
       <g>0</g>
@@ -449,7 +466,7 @@
      <enabled>1</enabled>
      <geologymodellayertype>0</geologymodellayertype>
      <useunitname>1</useunitname>
-     <unitname>0.001mD</unitname>
+     <unitname>0.01mD</unitname>
      <actorvisible>0</actorvisible>
      <actoropacity>1</actoropacity>
      <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
@@ -580,39 +597,33 @@
     <flowratetable class="FlowRateTable"><tablerow><time>-9.9999999999999997e+98</time>
       <flowrate><p>0</p>
        <h>1300000</h>
-       <w>1</w>
+       <w>5</w>
        <q>0</q>
        <xh2o>1</xh2o>
       </flowrate>
      </tablerow>
     </flowratetable>
    </boundarycondition>
-   <boundarycondition class="BCFS_Delaunay2D" id="4"><enabled>1</enabled>
-    <name>fixed-pressure-bloc</name>
-    <color><r>170</r>
+   <boundarycondition class="BCFS_PolyVertex" id="3"><enabled>1</enabled>
+    <name>Constant pressure block</name>
+    <color><r>255</r>
      <g>255</g>
-     <b>0</b>
+     <b>255</b>
      <alpha>255</alpha>
     </color>
     <actorvisible>1</actorvisible>
     <actoropacity>1</actoropacity>
-    <manifold class="PLBM_Delaunay2D"><basepoint><v row="0">0</v>
+    <manifold class="PLBM_PolyVertex"><basepoint><v row="0">0</v>
       <v row="1">0</v>
       <v row="2">0</v>
      </basepoint>
      <azimuth>0</azimuth>
-     <identifier>FAFNIR::BoundaryCondition/Id:4</identifier>
-     <pointlist3d class="PointList3D"><x size="3"><v index="0">3285.2563550638874</v>
-       <v index="1">2943.2778841734548</v>
-       <v index="2">3625.7148818348592</v>
+     <identifier>FAFNIR::BoundaryCondition/Id:3</identifier>
+     <pointlist3d class="PointList3D"><x size="1"><v index="0">2000</v>
       </x>
-      <y size="3"><v index="0">798.35244784403039</v>
-       <v index="1">616.02188377122366</v>
-       <v index="2">263.36433670750739</v>
+      <y size="1"><v index="0">1500</v>
       </y>
-      <z size="3"><v index="0">-10</v>
-       <v index="1">-10</v>
-       <v index="2">-10</v>
+      <z size="1"><v index="0">-250</v>
       </z>
      </pointlist3d>
     </manifold>
@@ -625,14 +636,6 @@
        </thermodynamictable>
       </initialstate>
       <useinitialstate>0</useinitialstate>
-     </statechange>
-     <statechange time="-100000000000000"><elementstate>0</elementstate>
-      <initialstate><thermodynamictable class="TT_IAPWSIF97"><p>1001324.9999999999</p>
-        <h>632575.73786280979</h>
-        <xh2o>1</xh2o>
-       </thermodynamictable>
-      </initialstate>
-      <useinitialstate>1</useinitialstate>
      </statechange>
     </elementstates>
    </boundarycondition>
